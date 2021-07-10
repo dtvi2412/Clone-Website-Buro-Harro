@@ -1,0 +1,75 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    padding:40px 100px;
+
+    position: relative;
+    z-index: 9999;
+
+    //Logo
+    &__logo{
+        cursor: pointer;
+        &__image{
+            width: 200px;
+            img{
+                width:100%;
+                height:100%;
+                object-fit: cover;
+            }
+        }
+    }
+    //Menu
+    &__menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // Navbar
+        &__navbar{
+            ul{
+                display: flex;
+                align-items: center;
+
+                list-style: none;
+                li{
+                    margin-right:30px;
+                    a{
+                        text-decoration: none;
+                        color:#fff;
+                        font-weight: 400;
+                        font-size:1.1rem;
+
+                        padding-bottom: 5px;
+
+                        transition: all .4s;
+                        border-bottom: none;
+                        &:hover{
+                            border-bottom: 1px solid rgb(228, 228, 228);
+                            
+                        }
+                    }
+                }
+            }
+        
+        }
+        //Translate Word
+        &__translateWord{
+            span{
+                color:#fff;
+
+                padding:12px;
+                border-radius: 50%;
+                font-size:0.9rem;
+                &:not(:first-child){
+                    margin-left:10px;
+                    border:1px solid #fff;
+                }
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+   
+}
