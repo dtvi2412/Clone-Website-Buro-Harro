@@ -4,6 +4,7 @@ import Background from './Components/Background/Background';
 import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
 import Project from './Components/Project/Project';
+import Slider from './Components/Slider/Slider';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header/>
       <Background/>
       <About/>
+      <Slider/>
       <Project/>
       <Footer/>
     </div>

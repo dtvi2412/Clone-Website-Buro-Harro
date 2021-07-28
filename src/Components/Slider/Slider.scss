@@ -1,0 +1,22 @@
+.slider{
+    margin-top: 780px;
+
+    width: 100%;
+    // margin:0 auto;
+ 
+    .slide-container{
+        .slider__image{ 
+      
+            height: 700px;
+          
+            width: 100%;
+            img{
+                width:100%;
+                height:100%;
+              
+                object-fit: contain;
+            }
+        }
+  
+    }
+}
