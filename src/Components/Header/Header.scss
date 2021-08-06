@@ -7,7 +7,14 @@
 
     position: relative;
     z-index: 9999;
-
+    height: 100%;
+    .header__openMenu{
+        opacity: 0;
+        visibility: hidden;
+        
+        color:#fff;
+       
+    }
     //Logo
     &__logo{
         cursor: pointer;
@@ -26,6 +33,9 @@
         align-items: center;
         justify-content: space-between;
         // Navbar
+        &__close{
+            display: none;
+        }
         &__navbar{
             ul{
                 display: flex;
@@ -72,4 +82,114 @@
         }
     }
    
+}
+@media only screen and (max-width:900px) {
+    .header{
+        padding:40px 50px;
+        &__{
+
+        }
+    }
+    
+}
+@media only screen and (max-width:800px) {
+    .header{
+        padding:30px 30px;
+        &__logo{
+            &__image{
+                width:150px;
+            }
+
+        }
+        &__menu{
+            &__navbar{
+                ul{
+                    li{
+                        a{
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+@media only screen and (max-width:670px) {
+    .header{     
+        flex-direction: column;
+    }
+    
+}
+@media only screen and (max-width:520px) {
+    .header{     
+        flex-direction: column;
+        &__openMenu{
+            margin-top:10px;
+           
+        }
+        .fade-header{
+            background-color: rgba(0,0,0,.5);
+            width:100%;
+            height:100%;
+            position: absolute;
+            top:0;
+            left:0;
+            bottom: 0;
+            z-index: 8;
+        }
+
+        &__logo{
+            &__image{
+                width:200px;
+            }
+            z-index: 9;
+        }
+        &__menu{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;  
+            z-index: 9;
+            &__close{
+                display: inline-block;
+                position: relative;
+                z-index: 19;
+                margin-top:40px;
+                .MuiSvgIcon-root{
+                    color:#fff;
+                    font-size:2rem;
+                    &:hover{
+                        cursor: pointer;
+                        color:blueviolet;
+                    }
+                }
+            }
+            &__translateWord{
+                margin-top:20px;
+                span{
+                    font-weight: bolder;
+                    font-size:1.2rem;
+                }
+            }
+            &__navbar{
+              
+                ul{
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-left:0;
+                    li{
+                        margin:5px 0;
+                        a{
+                            font-weight: bolder;
+                            letter-spacing: 1px;
+                        }
+                    }
+                 
+                }
+            }
+        }
+    }
+    
 }
