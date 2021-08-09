@@ -7,7 +7,8 @@
     z-index: 9999;
 
     //Cach top ra nua fixed
-    top:650px;
+    top:700px;
+ 
     &__top{
         display: flex;
         align-items: center;
@@ -85,4 +86,62 @@
         }
 
     }
+}
+@media screen and (max-width:850px) {
+    .about{
+        // top:650px;
+        &__top{
+        
+            &__list{
+                flex-direction: column;
+            }
+        }
+        &__last{
+            h1{
+                font-size:1.2rem;
+            }
+            flex-direction: column;
+            &__text{
+                p{
+                    font-size:0.9rem;
+                }
+            }
+        }
+    }
+    
+}
+@media screen and (max-width:520px) {
+    .about{
+        // top:300px;
+        &__top{
+        
+            &__list{
+                flex-direction: column;
+            }
+        }
+    }
+    
+}
+@media screen and (max-width:425px) {
+    .about{
+        // top:300px;
+        &__top{
+            flex-direction: column;
+            &__list{
+                flex-direction: column;
+            }
+        }
+        &__last{
+            h1{
+                font-size:1rem;
+            }
+            flex-direction: column;
+            &__text{
+                p{
+                    font-size:0.8rem;
+                }
+            }
+        }
+    }
+    
 }

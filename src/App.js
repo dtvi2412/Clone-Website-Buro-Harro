@@ -11,8 +11,8 @@ function App() {
     <div className="app">
       <Header/>
       <Background/>
-      {/* <About/>
-      <Slider/>
+      <About/>
+      {/* <Slider/>
       <Project/>
       <Footer/> */}
     </div>

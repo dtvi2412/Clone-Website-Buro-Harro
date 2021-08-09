@@ -78,3 +78,11 @@
         }
     }
 }
+@media screen and (max-width:425px) {
+    .background{
+       &__content{
+           flex-direction: column;
+           bottom:25%;
+       }
+    }
+}
