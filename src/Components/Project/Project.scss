@@ -63,3 +63,48 @@
         }
     }
 }
+
+@media screen and (max-width:1300px) {
+    .project{
+        width:90%;
+    }
+}
+@media screen and (max-width:1035px) {
+    .project{
+        width:90%;
+        &__bottom{
+            flex-direction: column;
+        }
+    }
+}
+@media screen and (max-width:500px) {
+    .project{
+        width:90%;
+        &__bottom{
+            &__item{
+                margin-top: 20px;
+                &__image{
+                    width:300px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:320px) {
+    .project{
+        width:90%;
+        &__bottom{
+            &__item{
+                &__icon{
+                    h1{
+                        font-size:14px;
+                    }
+                }
+                margin-top: 20px;
+                &__image{
+                    width:200px;
+                }
+            }
+        }
+    }
+}

@@ -12,9 +12,9 @@ function App() {
       <Header/>
       <Background/>
       <About/>
-      {/* <Slider/>
+      <Slider/>
       <Project/>
-      <Footer/> */}
+      <Footer/>
     </div>
   );
 }
